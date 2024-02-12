@@ -1,0 +1,81 @@
+body{
+	background: #ccc;
+}
+
+h1{
+	margin-bottom: -7px;
+	margin-left: 15px;
+	border-bottom: 2px solid black;
+	bo
+}
+.mytabs{
+	display: flex;
+	margin-top: -15px;
+	padding: 15px;
+	flex-wrap: wrap;
+}
+
+.mytabs input[type="radio"]{
+	display: none;
+	cursor: pointer;
+	max-width: 100%;
+}
+
+.mytabs label{
+	padding: 20px;
+	background: #e2e2e2;
+	font-weight: bold;
+	font-size: 15px;
+	cursor: pointer;
+	text-align: center;
+	width: 250px;
+}
+
+.mytabs .tabs{
+	width: 100%;
+	padding: 10px;
+	background: #fff;
+	order: 1;
+	display: none;
+	overflow: auto;
+	margin: auto;
+	margin-bottom: 20px;
+	box-shadow: -2px 4px 10px -2px;
+}
+
+.mytabs input[type="radio"]:checked + label + .tabs {
+	display: block;
+}
+
+.mytabs input[type="radio"]:checked + label{
+	background: #fff;
+}
+
+.op > img{
+    width: 300px;
+    height: 250px;
+    cursor: pointer;
+    margin: 19px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.container{
+	display: flex;
+	max-width: 100%;
+	overflow: auto;
+	flex-wrap: wrap;
+	position: relative;
+	justify-content: center;
+}
+
+.desc{
+	padding: 10px;
+	text-align: center;
+	font-size: 18px;
+	margin-top: -20px;
+}
+
+.op{
+	box-shadow: 4px 4px 8px -2px;
+}
